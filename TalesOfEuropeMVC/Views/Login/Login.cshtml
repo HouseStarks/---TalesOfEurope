@@ -1,0 +1,37 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body ng-app="appTOELoginModule">
+
+    <div class="loginform" ng-controller="TOELoginController">
+        <h2>Login</h2>
+
+        <form action="">
+            <div class="container">
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="" required ng-model="Username">
+
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="" required ng-model="Password">
+
+                <button type="submit" ng-click="GetUserNameDetails()">Login</button>
+                <button type="">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/AngularPlugin/angular.js"></script>
+    <script src="~/Scripts/AngularPulgin/angular-route.js"></script>
+    <script src="~/Scripts/AngularPlugin/jquery.min.js"></script>
+    <script src="~/Scripts/Module/CommonModule.js"></script>
+    <script src="~/Scripts/Controller/LoginController.js"></script>
+    <script src="~/Scripts/Service/LoginService.js"></script>
+</body>
+</html>
