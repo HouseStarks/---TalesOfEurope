@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TALESOFEUROPEModelStoreContainer" CdmEntityContainer="TALESOFEUROPEEntities">
+    <EntitySetMapping Name="Candidate_Login">
+      <EntityTypeMapping TypeName="TALESOFEUROPEModel.Candidate_Login">
+        <MappingFragment StoreEntitySet="Candidate_Login">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Sel_LoginDetails" FunctionName="TALESOFEUROPEModel.Store.Sel_LoginDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TALESOFEUROPEModel.Sel_LoginDetails_Result">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
